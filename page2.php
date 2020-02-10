@@ -4,7 +4,8 @@
     $imageList = ['', 'img/drones.png', 'img/googly.jpg', 'img/inspirational.jpg', 'img/keyboard.png', 'img/mountains.jpg'];
     $imageDescription = ['', 'How to program a fleet of Drones', 'When your food stares back', 'A daily dose of inspiration', 'Please call IT if your phone isn\'t working', 'Protesting Mountain Dew'];
     $fonts = ['', 'roboto', 'courier', 'palatino'];
-    $color = ['', 'brown', 'yellow', 'purple', 'cyan'];
+    $colors = ['', 'brown', 'yellow', 'purple', 'cyan'];
+    $color = '';
 
     // Determine if an image will show
     if (isset($_GET['image'])) {
@@ -41,6 +42,12 @@
         $font = '';
     }} else {
         $font = '';
+    }
+    // Choose a color for the return link
+    if (isset($_GET['color'])) {
+        if (is_numeric($_GET['color']) && $_GET['color'] >= 0 && $_GET['color'] <= 4) {
+            $color = ' ' . $colors[$_GET['color']];
+        }
     }
 
     // Determine if box is set
@@ -109,7 +116,7 @@
 <?php  if (isset($_GET['instructions']) && $_GET['instructions'] == 'none') {
 
 } else {
-    echo '<div class="instructions' . $font. '">To review the instructions, please click <a href="page1.php">here.</a></div>';
+    echo '<div class="instructions' . $font . $color . '">To review the instructions, please click <a href="page1.php">here.</a></div>';
 }
 ?>
 <!-- Show the footer -->
