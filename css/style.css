@@ -5,3 +5,87 @@ body {
     margin: 0;
     padding: 0;
 }
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    background: #ffe8b7;
+    color: #7c5c20;
+}
+
+header {
+    height: 70px;
+}
+
+footer {
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+}
+
+iframe {
+    clear: both;
+}
+
+.rightBox {
+    float: right;
+    position: absolute;
+    right: 10px;
+    height: 80px;
+    width: 130px;
+}
+
+.blue {
+    background: #000099;
+    color: #9999ff;
+}
+
+.red {
+    background: #bb0000;
+    color: #ff9999;
+}
+
+.green {
+    background: #009900;
+    color: #99ff99;
+}
+
+.instructions {
+    position: fixed;
+    bottom: 42px;
+    width: 100%;
+    text-align: center;
+}
+
+.eemage {
+    margin: 20px;
+    float: left;
+}
+
+.roboto {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.courier {
+    font-family: Courier, Arial, Helvetica, sans-serif;
+}
+
+.palatino {
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+}
+
+.brown {
+    color: #5a3300;
+}
+
+.yellow {
+    color: #fcff33;
+}
+
+.purple {
+    color: #dd22ff;
+}
+
+.cyan {
+    color: #00ffff;
+}
