@@ -28,7 +28,7 @@ If you don't want to have a link back to this page, set the "instructions" value
 <!-- Background Color  [Check]-->
 <!-- Choose if link to home page is there [Check]-->
 <!-- Font Type [Check] -->
-<!-- Font Color -->
+<!-- Font Color [Check]-->
 <!-- Wonky Donkey [Check]-->
 <!-- Header/Footer Colors [Check]-->
 
