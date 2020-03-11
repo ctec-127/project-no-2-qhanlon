@@ -32,7 +32,7 @@ If you don't want to have a link back to this page, set the "instructions" value
 <!-- Wonky Donkey [Check]-->
 <!-- Header/Footer Colors [Check]-->
 
-<h3>When you're ready to begin, please click <a href="page2.php">here</a></h3>
+<h3>When you're ready to begin, please click <a href="page2.php?image=1&background=blue&box=red&font=1&color=1&wonky=donkey&instructions=true">here</a></h3>
 </main>
 
 <?php echo $footer; ?>
